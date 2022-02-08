@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>792</width>
+    <height>583</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生成绩管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rc.qrc">
+    <normaloff>:/ico/images/appstu.ICO</normaloff>:/ico/images/appstu.ICO</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/jpg/images/main.jpg);</string>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>792</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>基础设置</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="action_4"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>基本信息管理</string>
+    </property>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>系统查询</string>
+    </property>
+    <addaction name="action_7"/>
+    <addaction name="action_8"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>系统管理</string>
+    </property>
+    <addaction name="action_9"/>
+    <addaction name="action_10"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>年级信息设置</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>班级设置</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>考试科目设置</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>考试类别设置</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>学生信息管理</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>成绩管理</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>学生信息查询</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>学生成绩查询</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>用户信息维护</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="rc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action_10</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>395</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>signal1()</signal>
+ </slots>
+</ui>

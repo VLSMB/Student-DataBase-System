@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="ico">
+    <file>images/appstu.ICO</file>
+  </qresource>
+  <qresource prefix="jpg">
+    <file>images/login.jpg</file>
+    <file>images/main.jpg</file>
+  </qresource>
+</RCC>
